@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const DynamicImg = ({imgSrc}) => {
+const DynamicImg = ({ imgUrl, contentTitle }) => {
+    console.log(imgUrl)
   return (
-    <img src={imgSrc} alt='fixed-img' className='h-[150px] w-[150px]'/>
-  )
-}
+    <div>
+      <img src={imgUrl} alt={contentTitle} className='h-[150px] w-[150px]' />
+    </div>
+  );
+};
 
-export default DynamicImg
+export default DynamicImg;

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Content = ({content}) => {
+const Content = ({content, contentTitle}) => {
   return (
-    <div className='w-auto h-[150px] overflow-y-scroll'>
-        <h1 className='font-semibold text-lg'>Content</h1>
+    <div className='w-auto '>
+        <h1 className='font-semibold text-lg'>{contentTitle}</h1>
         <p className='text-lg'>Published</p>
         {content}
     </div>
